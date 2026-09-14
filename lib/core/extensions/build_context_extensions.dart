@@ -7,7 +7,7 @@ import '../../localization/generated/app_localizations.dart';
 
 extension BuildContextExtensions on BuildContext {
   /// Shorthand for [AppLocalizations.of].
-  AppLocalizations get l10n => AppLocalizations.of(this);
+  AppLocalizations get l10n => AppLocalizations.of(this)!;
 
   /// Shorthand for [Theme.of].
   ThemeData get theme => Theme.of(this);

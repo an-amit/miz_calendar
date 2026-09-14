@@ -15,6 +15,8 @@ class MonthViewWidget extends StatelessWidget {
     required this.selectedDate,
     required this.primarySystem,
     required this.onDateSelected,
+    this.personalEventDates,
+    this.islamicEventDates,
     super.key,
   });
 
@@ -23,6 +25,8 @@ class MonthViewWidget extends StatelessWidget {
   final CalendarDate selectedDate;
   final CalendarSystem primarySystem;
   final ValueChanged<CalendarDate> onDateSelected;
+  final Set<GregorianDate>? personalEventDates;
+  final Set<GregorianDate>? islamicEventDates;
 
   static const List<String> weekdayShortNames = [
     'Sun',
@@ -97,6 +101,9 @@ class MonthViewWidget extends StatelessWidget {
                 isToday: isToday,
                 isSelected: isSelected,
                 isOutsideMonth: isOutsideMonth,
+                hasEvent: personalEventDates?.contains(itemDate.gregorian) ?? false,
+                isIslamicSpecialDay:
+                    islamicEventDates?.contains(itemDate.gregorian) ?? false,
                 onTap: () => onDateSelected(itemDate),
               );
             },

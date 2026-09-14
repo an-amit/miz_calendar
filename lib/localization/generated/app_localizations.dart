@@ -67,8 +67,8 @@ abstract class AppLocalizations {
 
   final String localeName;
 
-  static AppLocalizations of(BuildContext context) {
-    return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
+  static AppLocalizations? of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
   static const LocalizationsDelegate<AppLocalizations> delegate =
@@ -961,6 +961,372 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'AH'**
   String get ahSuffix;
+
+  /// No description provided for @eventIslamicNewYear.
+  ///
+  /// In en, this message translates to:
+  /// **'Islamic New Year'**
+  String get eventIslamicNewYear;
+
+  /// No description provided for @eventIslamicNewYearDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'1st of Muharram, marks the beginning of the new Islamic lunar year.'**
+  String get eventIslamicNewYearDesc;
+
+  /// No description provided for @eventAshura.
+  ///
+  /// In en, this message translates to:
+  /// **'Day of Ashura'**
+  String get eventAshura;
+
+  /// No description provided for @eventAshuraDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'10th of Muharram, a day of fasting and historic deliverance.'**
+  String get eventAshuraDesc;
+
+  /// No description provided for @eventMawlidAlNabi.
+  ///
+  /// In en, this message translates to:
+  /// **'Mawlid al-Nabi'**
+  String get eventMawlidAlNabi;
+
+  /// No description provided for @eventMawlidAlNabiDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'12th of Rabi\' al-Awwal, commemorating the birth of Prophet Muhammad ﷺ.'**
+  String get eventMawlidAlNabiDesc;
+
+  /// No description provided for @eventIsraWalMiraj.
+  ///
+  /// In en, this message translates to:
+  /// **'Isra and Mi\'raj'**
+  String get eventIsraWalMiraj;
+
+  /// No description provided for @eventIsraWalMirajDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'27th of Rajab, the miraculous night journey and ascension to the heavens.'**
+  String get eventIsraWalMirajDesc;
+
+  /// No description provided for @eventNisfShaban.
+  ///
+  /// In en, this message translates to:
+  /// **'Mid-Sha\'ban (Nisf Sha\'ban)'**
+  String get eventNisfShaban;
+
+  /// No description provided for @eventNisfShabanDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'15th of Sha\'ban, a blessed night preceding Ramadan.'**
+  String get eventNisfShabanDesc;
+
+  /// No description provided for @eventRamadan.
+  ///
+  /// In en, this message translates to:
+  /// **'First Day of Ramadan'**
+  String get eventRamadan;
+
+  /// No description provided for @eventRamadanDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The holy month of fasting, prayer, reflection, and community.'**
+  String get eventRamadanDesc;
+
+  /// No description provided for @eventLaylatAlQadr.
+  ///
+  /// In en, this message translates to:
+  /// **'Laylat al-Qadr (Night of Power)'**
+  String get eventLaylatAlQadr;
+
+  /// No description provided for @eventLaylatAlQadrDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The holiest night of the year, better than a thousand months.'**
+  String get eventLaylatAlQadrDesc;
+
+  /// No description provided for @eventEidAlFitr.
+  ///
+  /// In en, this message translates to:
+  /// **'Eid al-Fitr'**
+  String get eventEidAlFitr;
+
+  /// No description provided for @eventEidAlFitrDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Celebration marking the conclusion of the holy month of Ramadan.'**
+  String get eventEidAlFitrDesc;
+
+  /// No description provided for @eventDayOfTarwiyah.
+  ///
+  /// In en, this message translates to:
+  /// **'Day of Tarwiyah'**
+  String get eventDayOfTarwiyah;
+
+  /// No description provided for @eventDayOfTarwiyahDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'8th of Dhul-Hijja, pilgrims proceed to Mina for the rites of Hajj.'**
+  String get eventDayOfTarwiyahDesc;
+
+  /// No description provided for @eventDayOfArafah.
+  ///
+  /// In en, this message translates to:
+  /// **'Day of Arafah'**
+  String get eventDayOfArafah;
+
+  /// No description provided for @eventDayOfArafahDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'9th of Dhul-Hijja, the pinnacle of the Hajj pilgrimage and a day of forgiveness.'**
+  String get eventDayOfArafahDesc;
+
+  /// No description provided for @eventEidAlAdha.
+  ///
+  /// In en, this message translates to:
+  /// **'Eid al-Adha'**
+  String get eventEidAlAdha;
+
+  /// No description provided for @eventEidAlAdhaDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Feast of the Sacrifice commemorating the devotion of Prophet Ibrahim (AS).'**
+  String get eventEidAlAdhaDesc;
+
+  /// No description provided for @eventDaysOfTashreeq.
+  ///
+  /// In en, this message translates to:
+  /// **'Days of Tashreeq'**
+  String get eventDaysOfTashreeq;
+
+  /// No description provided for @eventDaysOfTashreeqDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'11th-13th of Dhul-Hijja, days of celebration and remembrance following Eid.'**
+  String get eventDaysOfTashreeqDesc;
+
+  /// No description provided for @eventsAddEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Event'**
+  String get eventsAddEvent;
+
+  /// No description provided for @eventsCreateEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'New Event'**
+  String get eventsCreateEvent;
+
+  /// No description provided for @eventsEditEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Event'**
+  String get eventsEditEvent;
+
+  /// No description provided for @eventsEventDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Details'**
+  String get eventsEventDetails;
+
+  /// No description provided for @eventsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get eventsTitle;
+
+  /// No description provided for @eventsTitleRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Title is required'**
+  String get eventsTitleRequired;
+
+  /// No description provided for @eventsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Description (optional)'**
+  String get eventsDescription;
+
+  /// No description provided for @eventsCalendarType.
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar System'**
+  String get eventsCalendarType;
+
+  /// No description provided for @eventsGregorian.
+  ///
+  /// In en, this message translates to:
+  /// **'Gregorian'**
+  String get eventsGregorian;
+
+  /// No description provided for @eventsHijri.
+  ///
+  /// In en, this message translates to:
+  /// **'Hijri'**
+  String get eventsHijri;
+
+  /// No description provided for @eventsDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get eventsDate;
+
+  /// No description provided for @eventsTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get eventsTime;
+
+  /// No description provided for @eventsAllDay.
+  ///
+  /// In en, this message translates to:
+  /// **'All Day'**
+  String get eventsAllDay;
+
+  /// No description provided for @eventsRecurrence.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat'**
+  String get eventsRecurrence;
+
+  /// No description provided for @eventsRecurrenceNone.
+  ///
+  /// In en, this message translates to:
+  /// **'Does not repeat'**
+  String get eventsRecurrenceNone;
+
+  /// No description provided for @eventsRecurrenceDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily'**
+  String get eventsRecurrenceDaily;
+
+  /// No description provided for @eventsRecurrenceWeekly.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly'**
+  String get eventsRecurrenceWeekly;
+
+  /// No description provided for @eventsRecurrenceMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly'**
+  String get eventsRecurrenceMonthly;
+
+  /// No description provided for @eventsRecurrenceYearly.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly'**
+  String get eventsRecurrenceYearly;
+
+  /// No description provided for @eventsReminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder'**
+  String get eventsReminder;
+
+  /// No description provided for @eventsReminderNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No reminder'**
+  String get eventsReminderNone;
+
+  /// No description provided for @eventsReminderAtTime.
+  ///
+  /// In en, this message translates to:
+  /// **'At time of event'**
+  String get eventsReminderAtTime;
+
+  /// No description provided for @eventsReminder15Min.
+  ///
+  /// In en, this message translates to:
+  /// **'15 minutes before'**
+  String get eventsReminder15Min;
+
+  /// No description provided for @eventsReminder30Min.
+  ///
+  /// In en, this message translates to:
+  /// **'30 minutes before'**
+  String get eventsReminder30Min;
+
+  /// No description provided for @eventsReminder1Hour.
+  ///
+  /// In en, this message translates to:
+  /// **'1 hour before'**
+  String get eventsReminder1Hour;
+
+  /// No description provided for @eventsReminder1Day.
+  ///
+  /// In en, this message translates to:
+  /// **'1 day before'**
+  String get eventsReminder1Day;
+
+  /// No description provided for @eventsColor.
+  ///
+  /// In en, this message translates to:
+  /// **'Color'**
+  String get eventsColor;
+
+  /// No description provided for @eventsSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Event'**
+  String get eventsSave;
+
+  /// No description provided for @eventsDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Event'**
+  String get eventsDelete;
+
+  /// No description provided for @eventsDeleteConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Event?'**
+  String get eventsDeleteConfirmTitle;
+
+  /// No description provided for @eventsDeleteConfirmMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete this event?'**
+  String get eventsDeleteConfirmMessage;
+
+  /// No description provided for @eventsCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get eventsCancel;
+
+  /// No description provided for @eventsNoEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'No events found'**
+  String get eventsNoEvents;
+
+  /// No description provided for @eventsNoPersonalEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'No personal events yet. Tap + to add one.'**
+  String get eventsNoPersonalEvents;
+
+  /// No description provided for @eventsMajor.
+  ///
+  /// In en, this message translates to:
+  /// **'Major Occasion'**
+  String get eventsMajor;
+
+  /// No description provided for @eventsUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming Events'**
+  String get eventsUpcoming;
+
+  /// No description provided for @eventsViewAll.
+  ///
+  /// In en, this message translates to:
+  /// **'View All'**
+  String get eventsViewAll;
 }
 
 class _AppLocalizationsDelegate

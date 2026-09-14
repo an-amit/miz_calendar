@@ -51,5 +51,6 @@ flutter:
   assets:
     - assets/data/
     - assets/fonts/
+    - assets/app_icons/
 
   fonts: []

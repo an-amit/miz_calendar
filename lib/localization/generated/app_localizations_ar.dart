@@ -447,4 +447,198 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get ahSuffix => 'هـ';
+
+  @override
+  String get eventIslamicNewYear => 'رأس السنة الهجرية';
+
+  @override
+  String get eventIslamicNewYearDesc =>
+      'الأول من محرم، بداية العام الهجري الجديد.';
+
+  @override
+  String get eventAshura => 'يوم عاشوراء';
+
+  @override
+  String get eventAshuraDesc =>
+      'العاشر من محرم، يوم الصيام وذكرى نجاة موسى عليه السلام.';
+
+  @override
+  String get eventMawlidAlNabi => 'المولد النبوي الشريف';
+
+  @override
+  String get eventMawlidAlNabiDesc =>
+      'الثاني عشر من ربيع الأول، ذكرى مولد النبي محمد ﷺ.';
+
+  @override
+  String get eventIsraWalMiraj => 'الإسراء والمعراج';
+
+  @override
+  String get eventIsraWalMirajDesc =>
+      'السابع والعشرون من رجب، ذكرى الإسراء والمعراج.';
+
+  @override
+  String get eventNisfShaban => 'ليلة النصف من شعبان';
+
+  @override
+  String get eventNisfShabanDesc =>
+      'الخامس عشر من شعبان، ليلة مباركة تمهيداً لرمضان.';
+
+  @override
+  String get eventRamadan => 'أول أيام شهر رمضان';
+
+  @override
+  String get eventRamadanDesc => 'شهر الصيام والقرآن والتراويح والبركات.';
+
+  @override
+  String get eventLaylatAlQadr => 'ليلة القدر';
+
+  @override
+  String get eventLaylatAlQadrDesc =>
+      'ليلة مباركة خير من ألف شهر (يتحراها المسلمون في العشر الأواخر).';
+
+  @override
+  String get eventEidAlFitr => 'عيد الفطر المبارك';
+
+  @override
+  String get eventEidAlFitrDesc => 'عيد إتمام فريضة الصيام والبهجة والتراحم.';
+
+  @override
+  String get eventDayOfTarwiyah => 'يوم التروية';
+
+  @override
+  String get eventDayOfTarwiyahDesc =>
+      'الثامن من ذي الحجة، انطلاق حجاج بيت الله الحرام إلى منى.';
+
+  @override
+  String get eventDayOfArafah => 'يوم عرفة';
+
+  @override
+  String get eventDayOfArafahDesc =>
+      'التاسع من ذي الحجة، أعظم أيام الحج ويوم المغفرة والدعاء المستجاب.';
+
+  @override
+  String get eventEidAlAdha => 'عيد الأضحى المبارك';
+
+  @override
+  String get eventEidAlAdhaDesc =>
+      'عيد الأضحية وذكرى استجابة خليل الله إبراهيم عليه السلام.';
+
+  @override
+  String get eventDaysOfTashreeq => 'أيام التشريق';
+
+  @override
+  String get eventDaysOfTashreeqDesc =>
+      'الحادي عشر حتى الثالث عشر من ذي الحجة، أيام أكل وشرب وذكر لله تعالى.';
+
+  @override
+  String get eventsAddEvent => 'إضافة حدث';
+
+  @override
+  String get eventsCreateEvent => 'حدث جديد';
+
+  @override
+  String get eventsEditEvent => 'تعديل الحدث';
+
+  @override
+  String get eventsEventDetails => 'تفاصيل الحدث';
+
+  @override
+  String get eventsTitle => 'العنوان';
+
+  @override
+  String get eventsTitleRequired => 'العنوان مطلوب';
+
+  @override
+  String get eventsDescription => 'الوصف (اختياري)';
+
+  @override
+  String get eventsCalendarType => 'نظام التقويم';
+
+  @override
+  String get eventsGregorian => 'ميلادي';
+
+  @override
+  String get eventsHijri => 'هجري';
+
+  @override
+  String get eventsDate => 'التاريخ';
+
+  @override
+  String get eventsTime => 'الوقت';
+
+  @override
+  String get eventsAllDay => 'طوال اليوم';
+
+  @override
+  String get eventsRecurrence => 'التكرار';
+
+  @override
+  String get eventsRecurrenceNone => 'لا يتكرر';
+
+  @override
+  String get eventsRecurrenceDaily => 'يومياً';
+
+  @override
+  String get eventsRecurrenceWeekly => 'أسبوعياً';
+
+  @override
+  String get eventsRecurrenceMonthly => 'شهرياً';
+
+  @override
+  String get eventsRecurrenceYearly => 'سنوياً';
+
+  @override
+  String get eventsReminder => 'التذكير';
+
+  @override
+  String get eventsReminderNone => 'بدون تذكير';
+
+  @override
+  String get eventsReminderAtTime => 'وقت الحدث';
+
+  @override
+  String get eventsReminder15Min => 'قبل 15 دقيقة';
+
+  @override
+  String get eventsReminder30Min => 'قبل 30 دقيقة';
+
+  @override
+  String get eventsReminder1Hour => 'قبل ساعة';
+
+  @override
+  String get eventsReminder1Day => 'قبل يوم واحد';
+
+  @override
+  String get eventsColor => 'اللون';
+
+  @override
+  String get eventsSave => 'حفظ الحدث';
+
+  @override
+  String get eventsDelete => 'حذف الحدث';
+
+  @override
+  String get eventsDeleteConfirmTitle => 'حذف هذا الحدث؟';
+
+  @override
+  String get eventsDeleteConfirmMessage => 'هل أنت متأكد من حذف هذا الحدث؟';
+
+  @override
+  String get eventsCancel => 'إلغاء';
+
+  @override
+  String get eventsNoEvents => 'لا توجد أحداث';
+
+  @override
+  String get eventsNoPersonalEvents =>
+      'لا توجد أحداث شخصية بعد. اضغط + للإضافة.';
+
+  @override
+  String get eventsMajor => 'مناسبة كبرى';
+
+  @override
+  String get eventsUpcoming => 'الأحداث القادمة';
+
+  @override
+  String get eventsViewAll => 'عرض الكل';
 }

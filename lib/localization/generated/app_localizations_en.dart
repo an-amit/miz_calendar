@@ -446,4 +446,201 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ahSuffix => 'AH';
+
+  @override
+  String get eventIslamicNewYear => 'Islamic New Year';
+
+  @override
+  String get eventIslamicNewYearDesc =>
+      '1st of Muharram, marks the beginning of the new Islamic lunar year.';
+
+  @override
+  String get eventAshura => 'Day of Ashura';
+
+  @override
+  String get eventAshuraDesc =>
+      '10th of Muharram, a day of fasting and historic deliverance.';
+
+  @override
+  String get eventMawlidAlNabi => 'Mawlid al-Nabi';
+
+  @override
+  String get eventMawlidAlNabiDesc =>
+      '12th of Rabi\' al-Awwal, commemorating the birth of Prophet Muhammad ﷺ.';
+
+  @override
+  String get eventIsraWalMiraj => 'Isra and Mi\'raj';
+
+  @override
+  String get eventIsraWalMirajDesc =>
+      '27th of Rajab, the miraculous night journey and ascension to the heavens.';
+
+  @override
+  String get eventNisfShaban => 'Mid-Sha\'ban (Nisf Sha\'ban)';
+
+  @override
+  String get eventNisfShabanDesc =>
+      '15th of Sha\'ban, a blessed night preceding Ramadan.';
+
+  @override
+  String get eventRamadan => 'First Day of Ramadan';
+
+  @override
+  String get eventRamadanDesc =>
+      'The holy month of fasting, prayer, reflection, and community.';
+
+  @override
+  String get eventLaylatAlQadr => 'Laylat al-Qadr (Night of Power)';
+
+  @override
+  String get eventLaylatAlQadrDesc =>
+      'The holiest night of the year, better than a thousand months.';
+
+  @override
+  String get eventEidAlFitr => 'Eid al-Fitr';
+
+  @override
+  String get eventEidAlFitrDesc =>
+      'Celebration marking the conclusion of the holy month of Ramadan.';
+
+  @override
+  String get eventDayOfTarwiyah => 'Day of Tarwiyah';
+
+  @override
+  String get eventDayOfTarwiyahDesc =>
+      '8th of Dhul-Hijja, pilgrims proceed to Mina for the rites of Hajj.';
+
+  @override
+  String get eventDayOfArafah => 'Day of Arafah';
+
+  @override
+  String get eventDayOfArafahDesc =>
+      '9th of Dhul-Hijja, the pinnacle of the Hajj pilgrimage and a day of forgiveness.';
+
+  @override
+  String get eventEidAlAdha => 'Eid al-Adha';
+
+  @override
+  String get eventEidAlAdhaDesc =>
+      'Feast of the Sacrifice commemorating the devotion of Prophet Ibrahim (AS).';
+
+  @override
+  String get eventDaysOfTashreeq => 'Days of Tashreeq';
+
+  @override
+  String get eventDaysOfTashreeqDesc =>
+      '11th-13th of Dhul-Hijja, days of celebration and remembrance following Eid.';
+
+  @override
+  String get eventsAddEvent => 'Add Event';
+
+  @override
+  String get eventsCreateEvent => 'New Event';
+
+  @override
+  String get eventsEditEvent => 'Edit Event';
+
+  @override
+  String get eventsEventDetails => 'Event Details';
+
+  @override
+  String get eventsTitle => 'Title';
+
+  @override
+  String get eventsTitleRequired => 'Title is required';
+
+  @override
+  String get eventsDescription => 'Description (optional)';
+
+  @override
+  String get eventsCalendarType => 'Calendar System';
+
+  @override
+  String get eventsGregorian => 'Gregorian';
+
+  @override
+  String get eventsHijri => 'Hijri';
+
+  @override
+  String get eventsDate => 'Date';
+
+  @override
+  String get eventsTime => 'Time';
+
+  @override
+  String get eventsAllDay => 'All Day';
+
+  @override
+  String get eventsRecurrence => 'Repeat';
+
+  @override
+  String get eventsRecurrenceNone => 'Does not repeat';
+
+  @override
+  String get eventsRecurrenceDaily => 'Daily';
+
+  @override
+  String get eventsRecurrenceWeekly => 'Weekly';
+
+  @override
+  String get eventsRecurrenceMonthly => 'Monthly';
+
+  @override
+  String get eventsRecurrenceYearly => 'Yearly';
+
+  @override
+  String get eventsReminder => 'Reminder';
+
+  @override
+  String get eventsReminderNone => 'No reminder';
+
+  @override
+  String get eventsReminderAtTime => 'At time of event';
+
+  @override
+  String get eventsReminder15Min => '15 minutes before';
+
+  @override
+  String get eventsReminder30Min => '30 minutes before';
+
+  @override
+  String get eventsReminder1Hour => '1 hour before';
+
+  @override
+  String get eventsReminder1Day => '1 day before';
+
+  @override
+  String get eventsColor => 'Color';
+
+  @override
+  String get eventsSave => 'Save Event';
+
+  @override
+  String get eventsDelete => 'Delete Event';
+
+  @override
+  String get eventsDeleteConfirmTitle => 'Delete Event?';
+
+  @override
+  String get eventsDeleteConfirmMessage =>
+      'Are you sure you want to delete this event?';
+
+  @override
+  String get eventsCancel => 'Cancel';
+
+  @override
+  String get eventsNoEvents => 'No events found';
+
+  @override
+  String get eventsNoPersonalEvents =>
+      'No personal events yet. Tap + to add one.';
+
+  @override
+  String get eventsMajor => 'Major Occasion';
+
+  @override
+  String get eventsUpcoming => 'Upcoming Events';
+
+  @override
+  String get eventsViewAll => 'View All';
 }

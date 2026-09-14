@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/extensions/build_context_extensions.dart';
+import '../../events/application/events_providers.dart';
+import '../../events/presentation/create_edit_event_screen.dart';
+import '../../events/presentation/event_detail_screen.dart';
 import '../application/calendar_controller.dart';
 import 'widgets/calendar_system_switcher.dart';
 import 'widgets/day_view_widget.dart';
@@ -18,6 +21,8 @@ class CalendarScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(calendarNotifierProvider);
     final notifier = ref.read(calendarNotifierProvider.notifier);
+    final indicators = ref.watch(monthEventIndicatorsProvider);
+    final dayEvents = ref.watch(eventsForSelectedDateProvider);
     final l10n = context.l10n;
     final theme = Theme.of(context);
 
@@ -73,6 +78,8 @@ class CalendarScreen extends ConsumerWidget {
                   displayedMonth: state.displayedMonth,
                   selectedDate: state.selectedDate,
                   primarySystem: state.primarySystem,
+                  personalEventDates: indicators.personalEventDates,
+                  islamicEventDates: indicators.islamicEventDates,
                   onDateSelected: notifier.selectDate,
                 ),
               ),
@@ -81,10 +88,21 @@ class CalendarScreen extends ConsumerWidget {
             // Day details & agenda
             DayViewWidget(
               selectedDate: state.selectedDate,
+              dayEvents: dayEvents,
               onAddEventPressed: () {
-                // Future Phase 4: Navigate to event creation
-                context.showSnackBar(
-                  'Event creation will be available in Phase 4',
+                Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    builder: (_) => CreateEditEventScreen(
+                      initialDate: state.selectedDate,
+                    ),
+                  ),
+                );
+              },
+              onEventTap: (id) {
+                Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    builder: (_) => EventDetailScreen(eventId: id),
+                  ),
                 );
               },
             ),

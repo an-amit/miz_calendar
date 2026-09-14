@@ -9,6 +9,8 @@ import '../../../core/extensions/build_context_extensions.dart';
 import '../../../core/routing/app_router.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/utils/date_formatter.dart';
+import '../../events/application/events_providers.dart';
+import '../../events/presentation/widgets/islamic_event_card.dart';
 import '../application/home_controller.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -175,37 +177,61 @@ class HomeScreen extends ConsumerWidget {
 
             const SizedBox(height: 12),
 
-            // Upcoming Islamic Events Preview Card (Stub for Phase 5)
-            Card(
-              elevation: 0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-                side: BorderSide(
-                  color: colorScheme.outlineVariant.withValues(alpha: 0.5),
-                ),
-              ),
-              child: ListTile(
-                leading: Container(
-                  width: 44,
-                  height: 44,
-                  decoration: BoxDecoration(
-                    color: kColorIslamicEvent.withValues(alpha: 0.15),
-                    shape: BoxShape.circle,
+            // Upcoming Events Preview Card
+            Consumer(
+              builder: (context, ref, _) {
+                final upcoming = ref.watch(upcomingEventsSummaryProvider);
+                final top = upcoming.firstOrNull;
+
+                String subtitleText;
+                if (top != null) {
+                  final title = top.isIslamic
+                      ? IslamicEventCard.getLocalizedTitle(context, top.title)
+                      : top.title;
+                  final countSuffix = upcoming.length > 1
+                      ? ' (+${upcoming.length - 1} more)'
+                      : '';
+                  subtitleText = '$title  •  ${top.hijriDate.formatEn()}$countSuffix';
+                } else {
+                  subtitleText = 'No upcoming events';
+                }
+
+                return Card(
+                  elevation: 0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    side: BorderSide(
+                      color: colorScheme.outlineVariant.withValues(alpha: 0.5),
+                    ),
                   ),
-                  child: const Icon(
-                    Icons.star_outline,
-                    color: kColorIslamicEvent,
-                    size: 22,
+                  child: ListTile(
+                    leading: Container(
+                      width: 44,
+                      height: 44,
+                      decoration: BoxDecoration(
+                        color: kColorIslamicEvent.withValues(alpha: 0.15),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.star_outline,
+                        color: kColorIslamicEvent,
+                        size: 22,
+                      ),
+                    ),
+                    title: const Text(
+                      'Upcoming Events',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(
+                      subtitleText,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    trailing: const Icon(Icons.arrow_forward_ios, size: 14),
+                    onTap: () => context.go(AppRoutes.events),
                   ),
-                ),
-                title: const Text(
-                  'Upcoming Events',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                subtitle: const Text('Events management coming in Phases 4 & 5'),
-                trailing: const Icon(Icons.arrow_forward_ios, size: 14),
-                onTap: () => context.go(AppRoutes.events),
-              ),
+                );
+              },
             ),
           ],
         ),
